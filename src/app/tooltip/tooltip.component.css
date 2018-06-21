@@ -1,0 +1,15 @@
+.component-container {
+  display: inline-block;
+}
+.tooltip-container {
+  display: inline-block;
+  height: 38px;
+}
+.tooltip-message {
+  display: inline-block;
+  height: 28px;
+  background-color: black;
+  padding: 0 5px;
+  color: white;
+  border-radius: 5px;
+}

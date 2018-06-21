@@ -1,0 +1,9 @@
+<div class="component-container">
+  <div class="tooltip-container">
+    <div *ngIf="showTooltip" class="tooltip-message" (click)="$event.stopPropagation()">{{message}}</div>
+  </div>
+  <div class="clickable-element" (click)="showTooltip=true"
+      clickOutside (clickOutside)="showTooltip=false">
+    <ng-content select="[element-with-tooltip]"></ng-content>
+  </div>
+</div>
